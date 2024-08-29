@@ -1,0 +1,11 @@
+*.tsv
+*.csv
+*.rds
+*.yml
+*.gct
+*.gmt
+StaticFiles/
+IntermediateFiles/
+.idea/
+.DS_Store
+.Rproj.user

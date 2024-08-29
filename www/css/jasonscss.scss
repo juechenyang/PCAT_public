@@ -1,0 +1,152 @@
+$yellow: #f4d03f;
+$blue: #16a085;
+$gradient-bg: linear-gradient(90deg, $blue, $yellow);
+$transparent-gray: rgba(0, 0, 0, 0.3);
+$transparent-white: rgba(255, 255, 255, 0.15);
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: $gradient-bg;
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+
+	// For codepen only
+	height: 100vh;
+}
+
+.menu {
+	ol {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		&:first-child {
+			width: 100%;
+			max-width: 960px;
+			margin: 1rem auto 0 auto;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			align-items: center;
+			box-shadow: 0px 3px 8px $transparent-gray;
+		}
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-top: 2px solid $blue;
+		position: relative;
+		transition: background 0.3s ease-in-out;
+
+		&:nth-child(1) > a::before {
+			content: "\f015";
+		}
+
+		&:nth-child(2) > a::before {
+			content: "\f05a";
+		}
+
+		&:nth-child(3) > a::before {
+			content: "\f0ad";
+		}
+
+		&:nth-child(4) > a::before {
+			content: "\f2e7";
+		}
+
+		// &:nth-child(5) > a::before {
+		// 	content: "\f007";
+		// }
+
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) > a::before {
+				font-family: "Font Awesome 5 Free";
+				font-size: 1.2rem;
+				display: block;
+				margin-bottom: 1rem;
+				font-weight: 900;
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				color: $blue;
+
+				@media (min-width: 768px) {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
+		.sub-menu > a {
+			color: red;
+		}
+
+		&:not(:last-child) {
+			border-right: 1px solid $transparent-white;
+		}
+
+		.sub-menu {
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			transform-origin: top;
+			transform: rotateX(-90deg);
+			transition: transform 0.3s linear;
+			background-color: $yellow;
+
+			.menu-item {
+				border-color: $transparent-white;
+
+				a::before {
+					content: "";
+				}
+
+				&:first-child {
+					border: 0;
+				}
+			}
+		}
+
+		&:hover,
+		&.active {
+			border-top: 2px solid $yellow;
+			background-color: $transparent-white;
+
+			a::before {
+				color: white;
+			}
+		}
+
+		&:hover .sub-menu {
+			transform: rotateX(0deg);
+		}
+
+		a {
+			font-size: 0.8rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			height: 100%;
+			width: 100%;
+			padding: 1.5em 1em;
+
+			@media (min-width: 768px) {
+				font-size: 1rem;
+			}
+		}
+	}
+}

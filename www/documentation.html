@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/animate.min.css">
+    </head>
+</html>
+<body>
+    <div class="container p-0">
+        <div class="header_bg">
+            <div class="middle-text">
+                <span class="show-case-big animated bounceInLeft">Documentation</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 my-4">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="doc-title-font" >Documentation guides:</span>
+                    </div>
+                    <ul class="ml-4" style="list-style: none">
+                        <li><a href="#CCPM"><h6>Childhood cancer and PDX models</h6></a></li>
+                        <li><a href="#How_much_do_PDXs_resemble_patient_tumors"><h6>How much do PDXs resemble patient tumors?</h6></a></li>
+                        <li><a href="#What_is_pcat"><h6>What is PCAT?</h6></a></li>
+                        <li><a href="#other_tools"><h6>PCAT vs other tools/databases</h6></a></li>
+                        <li><a href="#Drug_doses_and_schedule"><h6>Drug doses and schedule</h6></a></li>
+                        <li><a href="#drug_data"><h6>More on drug response data</h6></a></li>
+                        <li><a href="#Pathway_analysis_and_drug_targets"><h6>Pathway analysis and drug targets</h6></a></li>
+                        <li><a href="#gene_fusions"><h6>Gene fusions</h6></a></li>
+                        <li><a href="#pdx_model_available"><h6>Are PCAT-listed PDX models available?</h6></a></li>
+                        <li><a href="#framework"><h6>Technical framework of PCAT</h6></a></li>
+                        <li><a href="#cite_and_contact"><h6>Cite and contact</h6></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 my-4">
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="CCPM" ><span class="doc-title-font">Childhood cancer and PDX models</span></div>
+                    <div class="card-body"><p class="font-size-two" align="justify">
+                        Cancer is the leading cause of disease-related death in children. Approximately 300,000 children from birth to 14 years old are diagnosed with cancer each year worldwide (Sweet-Cordero et al. Science, 2019). In 2019, the US reported around 11,000 new diagnoses with about 1,200 cancer related deaths. Compared to adults, children with cancer have relatively better outcome. Five-year survival rate now exceeds 80%. For some cancers such as Hodgkin lymphoma, five-year survival is approaching 100%, thanks to intensive multimodal treatment including surgical resection, chemo and radiotherapy. As encouraging as this may sound, clinical therapy of childhood cancers faces many challenges. First of all, many cancers still have very dire prognosis. For instance, Diffuse Intrinsic Pontine Glioma (DIPG), a tumor found in the brainstem, has almost no patients survive more than 5 years. Chemoradiotherapy is effective but has severe toxicity with long-term health consequences. Hence, childhood cancer survivors bear increased risk of many health problems such as cardiovascular diseases, second cancers, diabetes, etc. Less toxic approaches such as targeted therapy are not yet available for every cancer type.</p>
+                        <p class="font-size-two" align="justify">Research is key to addressing these challenges. However, a major hurdle for research is the rarity of childhood cancer, particularly solid tumors. Childhood cancers make up only about 1% of annual new diagnoses, which will be further split into many disease entities. This small pool makes it hard for bench research to develop and test novel therapeutics using clinically relevant samples. Even if they pass lab tests, clinicians often find it challenging to accrue enough patients for clinical trials. These challenges highlight the importance of proper tools for childhood cancer research.</p>
+                        <p class="font-size-two" align="justify">Patient-derived xenograft (PDX) models are developed by implanting patient tumors into immunodeficient rodents (often mice). Many studies have shown that these models faithfully recapitulate the original tumors in histopathology, genetics, epigenetics, and therapeutic response. These characteristics make them an excellent tool for tumor biology and preclinical studies. Preclinical testing, spearheaded by Pediatric Preclinical Testing Consortium (PPTC, previously known as PPTP, <a href="http://www.ncipptc.org/" target="_blank">http://www.ncipptc.org/</a>), is vital for prioritizing drugs and patient cohorts for clinical trials provided the rarity of childhood cancers.</p>
+                        <p class="font-size-two" align="justify">For more about PDX model and childhood cancer, read this article by Drs. Peter Houghton and Raushan Kurmasheva (<a href="http://pharmrev.aspetjournals.org/content/71/4/671.long" target="_blank">http://pharmrev.aspetjournals.org/content/71/4/671.long</a>).</p>
+                    </div>
+                </div>
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="How_much_do_PDXs_resemble_patient_tumors"><span class="doc-title-font">How much do PDXs resemble patient tumors?</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">The fidelity of model systems is critically important. In cancer research, no model is 100% identical to the originating tumor. As long as cells are isolated from patient tumor, they are detached from their native growth environment, which has been recognized as an inherent factor in shaping cancer. As cells are cultured in long-term passages, they evolve, though they should maintain early genetic events that drove the transformation.</p>
+                        <p class="font-size-two" align="justify">Compared with cell lines and organoids, PDXs skip the cell culture step by directing implanting patient tumor samples into immune nude mice. This does not suggest tumor cells after successful implantation do not evolve, but skipping the cell culture does reduce the artificial seletion pressure that may deviate the resulting models from their original tumors. Early studies by Houghton group showed that PDX models well recapitulate the histological and growth characteristics of the patient tumors (Houghton et al. JNCI, 1982). Later within PPTP, they further showed expression and copy number patterns of PDX models resemble those of patient samples of the same diagnosis (Neale et al. Clin Cancer Res, 2008).</p>
+                        <p class="font-size-two" align="justify">The limitation of these studies were that the comparisons were based on groups, not matched pairs. This gap has been filled by many studies showing that indeed, PDXs resemble the matched patient samples at histological, genetic and epigenetic levels when mouse contamination is properly addressed. In most studies, paired donor tumors and PDXs were usually clustered together in unsupervised clustering. These results were nicely summarized in a <a href="https://cancerdiscovery.aacrjournals.org/content/4/9/998.long" target="_blank">recent review.</a></p>
+                        <p class="font-size-two" align="justify">As of July 2020, PDXs collected in PCAT do not have matched donor tumor data. The reason is that most of these PDXs were established over a long period of time (some up to decades) thus their matched tumor DNA was either not collected or became unusable. While this certainly limits our ability to quantify the similarity between our PDXs with their original tumors, it does not dimish their value in preclinical testing. When the genomics of each model is characterized, the model per se can be considered an indepdent tumor and can be used to map out the relationship between genetic changes and responses to therapeutic agents. Their relationship with the original patient tumor becomes less important, in our view.</p>
+                    </div>
+                </div>
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="What_is_pcat"><span class="doc-title-font">What is PCAT?</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">PCAT stands for PDX for Childhood cAncer Therapeutics. It is a unique resource cataloguing childhood cancer PDXs. As of June 2020, PCAT deposits data for 324 PDX models, ranging from leukemia to very rare tumors such as Ewing sarcoma, see the pie chart below. We developed this resource, firstly, to organize data generated at our institute (GCCRI), and, more importantly, to help researchers identify relevant PDX models for their studies. Most of these models have genomic data (mutation, expression, fusion, copy number alteration) along with histopathological data, thus allowing researchers to identify them by histology or genomic features. Importantly, PCAT also curates preclinical testing data for some models. These data were manually collected from publications reporting testing results of individual agents since 2008. This set of unique data enables correlation analysis of model genetic profiles and their responses to therapeutic agents. Such capacity has the potential to help identify drug sensitivity biomarkers and generate hypothesis related to cancer therapeutics.</p>
+                        <p class="font-size-two" align="justify">An important goal of PCAT is to design intuitive interfaces for researchers to mine our dataset, even if they do not have any computational background. Thus, we consciously developed user-friendly modules that allow users to correlate gene expression to clinical, genomic alteration, drug response data, etc. Given the need to replicate correlations identified from models in real patient data, PCAT also integrated data from TARGET, an NCI-funded multi-institutional collaborative project to profile a large number of childhood cancer patients (<a href="https://ocg.cancer.gov/programs/target" target="_blank">https://ocg.cancer.gov/programs/target</a>). We spent tremendous effort on sorting out this high-dimensional dataset and plug it into each module so it is side-by-side with the PDX dataset.</p>
+                        <p class="font-size-two" align="justify">PCAT analysis modules generally use gene expression as the entry point. This is due to the less mutations harbored by childhood cancers. Two recently published genomic studies (Ma et al. Nature, 2019; Grobner et al. Nature 2019) show that mutational load is ten times lower in childhood cancers than in their adult counterparts. This is because 1) children do not acquire as many passenger mutations as adults due to their younger ages, and 2) may be related to epigenetic mechanisms or gene fusions at play. Either way, expression is a reliable readout of these distinct tumorigenic mechanisms.</p>
+                    </div>
+                </div>
+                
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="other_tools"><span class="doc-title-font">PCAT vs other tools/databases</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">There are other community tools available to help mining childhood cancer genomic data and finding PDX models. However, PCAT is unique in that it combines a large collection of childhood cancer PDXs with intuitive analytic modules. By no means we suggest that PCAT is superior to other tools. Every resource has distinguishing features, and having more tools helps address the community need for data sharing and dissemination. We welcome the development of other resources that together work toward a world where no children suffer from cancer. The list of several widely used tools is provided below. We apologize to colleagues if we missed their tools and would be glad to add a brief introduction if they reach out to us.</p>
+                        <ul class="ml-5 mr-3">
+                            <li class="font-size-two"> <p align="justify"><a href="https://pedcbioportal.org/login.jsp" target="_blank">PedcBio</a> is an extension of cBio portal. It is focused on integrated data visualization, particularly mutation and copy number data. Many datasets are available on pedcbio.</li>
+                            <li class="font-size-two"> <p align="justify"><a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" target="_blank">R2</a> is a genomic data analysis portal based in the Netherlands. It provides an array of functions and over 1000 datasets for data analysis (including both adult and childhood cancers).</li>
+                            <li class="font-size-two"> <p align="justify"><a href="https://www.stjude.cloud/" target="_blank">St. Jude Cloud</a> is an integrated platform for data search, visualization, and cloud computing. It has curated many pan-cancer analysis results and provides outstanding visualization schemes for mutations and fusions.</li>
+                            <li class="font-size-two"> <p align="justify"><a href="https://www.pdxfinder.org/" target="_blank">PDXFinder</a> is a joint effort by Jackson lab and many other institutes for PDX model identification. It is so far the largest PDX database (currently storing information of nearly 3,000 PDX models) including models of both adult and childhood cancers.</li>
+                            <li class="font-size-two"> <p align="justify"><a href="https://pdmdb.cancer.gov/web/apex/f?p=101:1:0:::::" target="_blank">NCI PDMR</a> (Patient-Derived Models Repository) is a NCI developed national repository of patient-derived models including PDXs, cell cultures, organoids etc., with contributions from many institutions across the country. It currently has models from more than 500 patients. About 60% of these models have DNA or RNA sequencing data.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="Drug_doses_and_schedule"><span class="doc-title-font">Drug doses and schedule</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">Response to therapeutic agents is directly linked to drug exposure: dose and schedule of administration. In PPTC, every drug has a different dose and schedule of administration. For cytotoxic drugs (such as TMZ) the dose/scedule is close to the Maximum Tolerated Dose (MTD), a dose that gives 10% lethality. For molecularly targeted drugs the dose/schedule are based on target inhibition. Where possible the drug dose/schedule is chosen to give similar drug exposures in mice as can be tolerated in patients.</p>
+                        <p class="font-size-two" align="justify">PPTP uses a two-stage testing stragegy. In the first stage, the agent is tested at MTD in mice. Once the drug is tested to have antitumor activity, more doses will be tested to study dose-response relationship and pharmacokinetics. For molecularly targeted agents, their corresponding targets will also be evaluated.</p>
+                        <p class="font-size-two" align="justify">For more on the subject, read <a href="https://gccri.uthscsa.edu/wp-content/uploads/sites/128/2019/07/PPTPOverview.pdf" target="_blank">this document here.</a></p>
+                        <p class="font-size-two" align="justify">PCAT currently do not have dosing and schedule information on drugs. The response levels are corresponding to higher doses of the tested drugs if multiple doses were used. We are working with PPTP to collect such information.</p>
+                    </div>
+                </div>
+                
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="drug_data"><span class="doc-title-font">More on drug response data </span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">Preclinical testing is a complicated resource-intensive task. Issues such as dosing and administration intervals need to be carefully calibrated to model the clinical setting to obtain the most relevant data. To obtain robust results, multiple animals (typically n=10) need to be tested, though retrospective data shows single-mouse (SM) design can largely produce similar data, thus significantly reducing the number of animals needed.</p>
+                        <p class="font-size-two" align="justify">For solid tumors, responses were defined as follows by PPTP/PPTC.</p>
+                        <ul class="ml-5 mr-3 font-size-two">
+                            <li><p align="justify">Progressive disease (PD) was defined as < 50% regression from initial volume during the study period and > 25% increase in initial volume at the end of study period.</li>
+                            <ul class="ml-5 mr-3">
+                                <li><p align="justify">PD was further classified into PD1 or PD2 based on the tumor growth delay (TGD) value. TGD values were calculated based on the numbers of days to event. For each individual mouse that had PD and had an event in the treatment groups, a TGD value was calculated by dividing the time to event for that mouse by the median time to event in the respective control group. Median times to event were estimated based on the Kaplan-Meier event-free survival distribution. If a mouse had a TGD value ≤ 1.5, that mouse was considered PD1. If the TGD value was > 1.5, the mouse was considered PD2. Mice that had PD but did not have an event at the end of the study were coded as PD2.</li>
+                            </ul>
+                            <li><p align="justify">Stable disease (SD) was defined as < 50% regression from initial volume during the study period and ≤ 25% increase in initial volume at the end of the study.</li>
+                            <li><p align="justify">Partial response (PR) was defined as a tumor volume regression ≥50% for at least one time point but with measurable tumor (≥ 0.10 cm3).</li>
+                            <li><p align="justify">Complete response (CR) was defined as a disappearance of measurable tumor mass (< 0.10 cm3) for at least one time point.</li>
+                            <li><p align="justify">A complete response was considered maintained (MCR) if the tumor volume was < 0.10 cm3 at the end of the study period.</li>
+                        </ul>
+                        <p class="font-size-two">For leukemia models </p>
+                        <ul class="ml-5 font-size-two">
+                            <li><p align="justify">Individual mice were categorized as PD if their percentage of hCD45 cells never dropped below 1% and they had an event before the end of the study period. An event is defined as hCD45 cells above 25% in the peripheral blood with times to event calculated as above.</li>
+                            <ul class="ml-5">
+                                <li><p align="justify">PD was further classified into PD1 and PD2 according to the TGD value.</li>
+                            </ul>
+                            <li><p align="justify">Individual mice were classified as SD if their percentage of hCD45 cells never dropped below 1% and no event occurred before the end of the study.</li>
+                            <li><p align="justify">PR was assigned if the percentage of cells dropped below 1% for any one time point regardless of whether the percentage eventually reached 25%.</li>
+                            <li><p align="justify">A CR was assigned if the percentage of hCD45 cells dropped below 1% for 2 consecutive weeks of the study and regardless of whether the percentage reached 25% or not.</li>
+                            <li><p align="justify">A MCR was considered maintained if the percentage of hCD45 was less than 1% for the last three measurements of the study.</li>
+                        </ul>
+                        <p class="font-size-two" align="justify">PCAT uses 1 for PD1, 2 for PD2, 3 for SD, 4 for PR, 5 for CR, and 6 for MCR. If a drug is not tested, it is assigned a value 0. More on PPTP experimental and statistical methods can be found at:</p>
+                        <a class="font-size-two" href="https://gccri.uthscsa.edu/wp-content/uploads/sites/128/2019/07/detailedAnalysisMethods.pdf ">https://gccri.uthscsa.edu/wp-content/uploads/sites/128/2019/07/detailedAnalysisMethods.pdf </a>
+                    </div>
+                </div>
+
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="Pathway_analysis_and_drug_targets"><span class="doc-title-font">Pathway analysis and drug targets</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">PCAT provides a ssGSEA module for pathway analysis. This method has been repeatedly used in our previous work (Zheng et al. Cancer Cell, 2016; Barthel et al. Nat Genet, 2017). Before its deployment, we compared it with GSVA, a similar R package. The results from both tools were highly correlated (Pearson R>0.9), suggesting either tool will do the job well. However, we were able to optimize our ssGSEA code to run faster than GSVA; we thus decided to use ssGSEA.</p>
+                        <p class="font-size-two" align="justify">The use of the module is intuitive. The module takes a gene set as input, and calculates an aggregate score to reflect the overall activity of the gene set. PCAT provides an option for users to align drug response data to this aggregate score. The result data can be downloaded for further analysis.</p>
+                        <p class="font-size-two" align="justify">The “Drug Responses” module takes single genes and correlate the query gene’s expression and mutation with drug responses. We did not add copy number into this because expression generally reflects gene expression, and further, adding too many variables may complicate data interpretation. Our goal is to balance function and usability. For each selected drug, we show in the result panel the action mechanism to help user better understand the returned results.</p>
+                        <p class="font-size-two" align="justify">At some point during portal development, we considered to build a module for exploring targetable genes (a.k.a. druggable targets). However, since the “Drug Response” module can take any gene as input, we thought this might be unnecessary. In addition, many durgs used in pediatric oncology are chemoagents. They generally induce DNA errors or disrupt cell division (such as microtube inhibitors) rather than targeting a specific gene (or gene families). Further, childhood cancers have far less mutations than adult cancers.</p>
+                        <p class="font-size-two" align="justify">There are many resources where users can get druggable targets in cancer precision medicine, including <a target="_blank" href="https://www.oncokb.org/">MSKCC OncoKB</a>, <a target="_blank" href="https://www.mycancergenome.org/">Vanderbilt MyCancerGenome</a>, <a target="_blank" href="https://www.drugbank.ca/">DrugBank</a>, etc. Many cancer centers have their own proprietary databases. Generating a target list on top of these resources is straightforward.</p>
+                    </div>
+                </div>
+                
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="gene_fusions"><span class="doc-title-font">Gene fusions</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">Gene fusion represents an important class of molecular drivers and therapeutic targets in childhood cancer. Driver fusions are usually linked to quiet genomes (less mutations and copy number). BCR-ABL, first identified in CLL, has been the first molecular target for molecularly targeted therapies. Some childhood cancers, such as Ewing sarcoma, are driven by EWSR1-FLI1 fusion, thus enumerating the fusions is a starting point to find new fusion drivers and targets. We previously systematically analyzed gene fusions in TCGA and built a fusion portal (Yoshihara et al. Oncogene, 2013; Hu et al. NAR, 2018). Here we aim to provide a similar resource for childhood cancer.</p>
+                        <p class="font-size-two" align="justify">We analyzed 1,048 samples from TARGET using <span class="font-weight-bold"> <a target="_blank" href="https://github.com/juechenyang/PRADA2">PRADA</a></span> and <span class="font-weight-bold"> <a target="_blank" href="https://github.com/STAR-Fusion/STAR-Fusion">StarFusion</a></span>. This effort identified 9,119 fusions. A few samples of these 1,048 were initially not included in the clinical table of the database, thus their fusions were excluded from the portal (currently the portal has 8912 fusions from 943 unique samples). Our benchmark analysis using data from ALL and AML suggests that the two callers combined can recover 90% of driver fusions in the dataset. The manuscript describing the PCAT tool and associated data is being prepared for submission.</p>
+                        <p class="font-size-two" align="justify">In parallel, fusions were also called for 244 PDX models where RNA-seq data is available. All fusion data can be accessed in the “fusion” module. Users can also use fusion to identify models that carry a particular fusion.</p>
+                    </div>
+                </div>
+                
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="pdx_model_available"><span class="doc-title-font">Are PCAT-listed PDX models available?</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">These PDX models at the GCCRI are managed by the group of researchers involved in PPTP/PPTC (Drs. Peter Houghton and Raushan Kurmasheva). Over the years, many of the models have been distributed as an academic support to other labs, and we are open to continue sharing the PDX xenografts with the research community through the GCCRI PDX Core directed by Dr. Raushan Kurmasheva (<a href="https://gccri.uthscsa.edu/services/pdx-core">https://gccri.uthscsa.edu/services/pdx-core</a>). Upon contact by an interested researcher, we will initiate the material transfer agreement between the institutions.</p>
+                    </div>
+                </div>
+                <div class="card w-100 mb-4">
+                    <div class="card-header" id="framework"><span class="doc-title-font">Technical framework of PCAT</span></div>
+                    <div class="card-body">
+                        <p class="font-size-two" align="justify">PCAT was built on the R language (version 3.6.1) and R-Shiny web-framework (version 1.3.2). Most of the computing and data processing tasks are implemented with R based packages (e.g. ggplot2, survminer, etc.). To make PCAT more interactive and more responsive, we constructed the interface using multiple front-end technologies including HTML, CSS3, and JavaScript. We store the expression and genomics data in MySql database services for fast query. For certain modules, we also store expression data in pre-generated .rds format to improve computing response time.</p>
+                        <p class="font-size-two" align="justify">The PCAT data are stored in a virtual server hosted by the UT Health Information Management System (IMS). In a cooperative effort with IMS, we designed a two-server system where the site server is separated from the data server to ensure data security. At this point, all our data are de-identified and publicly downloadable.</p>
+                    </div>
+                </div>
+                <div class="card w-100 mb-4">
+                    <div class="card card-header" id="cite_and_contact"><span class="doc-title-font">Cite and contact</span></div>
+                    <div class="card card-body">
+                        <p class="font-size-two" align="justify">Our manuscript is published in Nucleic Acids Research. See links below:</p>
+                        <p class="font-size-two font-italic" align="justify"><a target="_blank" href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaa698/5893968?searchresult=1">PCAT: An integrated portal for genomic and preclinical testing data of pediatric cancer patient-derived xenograft models</a></p>
+                        <p class="font-size-two font-italic" align="justify">Juechen Yang, Qilin Li, Nighat Noureen, Yanbing Fang, Raushan Kurmasheva, Peter Houghton, Xiaojing Wang, Siyuan Zheng</p>
+                        <p class="font-size-two font-italic" align="justify">Nucleic Acids Research, gkaa698; doi: <a target="_blank" href="https://doi.org/10.1093/nar/gkaa698">https://doi.org/10.1093/nar/gkaa698</a></p>
+                        <p class="font-size-two" align="justify">For comments, feedbacks, and questions, please email <a href="mailto:zhenglab@uthscsa.edu">zhenglab@uthscsa.edu</a></p>
+                        <p class="font-size-two" align="justify">We welcome comments and feedbacks. We are working on building a feedback page to collect/display user feedback in a more transparent manner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>

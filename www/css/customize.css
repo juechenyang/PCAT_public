@@ -1,0 +1,565 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme:700&display=swap');
+body {
+  background: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* define fonts for h tags */
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize
+}
+.doc-title-font{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+.font-size-one{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+.font-size-two{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+.font-size-three{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Font Awesome class */
+.font-awesome{
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.2rem;
+}
+.font-capital{
+  text-transform: capitalize;
+}
+
+/* dynamic width for container */
+@media only screen and (max-width:767px){
+  .container{
+    max-width: 100%;
+  }
+  html{
+    font-size: 6px
+  }
+}
+@media only screen and (min-width:768px){
+  .container{
+    max-width: 750px;
+  }
+  html{
+    font-size: 8px
+  }
+}
+@media only screen and (min-width:992px){
+  .container{
+    max-width: 800px;
+  }
+  html{
+    font-size: 10px
+  }
+}
+@media only screen and (min-width:1200px){
+  .container{
+    max-width: 1050px;
+  }
+  html{
+    font-size: 13px
+  }
+}
+
+path.slice{
+	stroke-width:2px;
+}
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+.shiny-output-error-InputCheck{
+  color: blue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+.shiny-output-error-ValidateInput{
+  color: blue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+.shiny-output-error-ValidateInputSpecial{
+  color: blue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+.shiny-output-error-ErrorOutput{
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+.shiny-output-error-PDXError{
+  color: red;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+}
+/* navagation bar section css */
+.logo{
+  height: 4rem;
+  width: 5.5rem;
+}
+.banner-style{
+  background-color: #d16a0a; 
+  padding: 0 0;
+}
+.nav-title-font{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+  text-rendering: auto;
+}
+.title-special{
+  font-family: Papyrus;
+  font-size: 1.5rem;
+  color: #003b7d;
+  font-weight: 900;
+}
+
+/* css class for menu-item */
+.menu{
+  list-style: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.menu svg{
+  font-size: 1.5rem;
+}
+.menu a{
+  color: white;
+  text-decoration-line: none;
+}
+.menu span{
+  display: block;
+}
+.menu .menu-item{
+  border-top: cyan 1px solid;
+  width: 10rem;
+  line-height: 2.5rem;
+  cursor: pointer;
+  /* box-shadow: -1px 0px 3px 0px #353535; */
+  box-shadow: inset 0 0 5px #ffbb00;
+}
+.menu-item:hover, .menu-item.active {
+  border-top: 1px solid #f4d03f;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.row-color{
+  background: linear-gradient(
+    to right bottom,
+    #00d9ff,#48ff00);
+}
+
+.module-box{
+  background-color: #d16a0a;
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  box-shadow: 5px 5px 12px 0px #4d4d4d;
+	background:linear-gradient(to bottom, #d18f00 5%, #d16a0a 100%);
+	/* border:1px solid #855f19; */
+	text-shadow:0px 1px 0px #ff8800;
+}
+/* .module-box .module-box-front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: #15e9f8ad;
+}
+.module-box .module-box-front:hover{
+  opacity: 1;
+} */
+.module-box:hover{
+  background: linear-gradient(to top, #d18f00 5%, #d16a0a 100%);
+  color: #00ff80;
+}
+.module-box .module-box-front{
+  opacity: 0;
+  position: absolute;
+}
+.module-box:active{
+  transform: translateY(4px);
+}
+.module-box .module-font{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.jump-window{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)!important;
+  width: 40rem;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.padding_h{
+  padding: 0 2vw;
+}
+.padding_v{
+  padding: 2vh 0;
+}
+/* .padding_top{
+  padding-top: 1vh;
+}
+.margin_v{
+  margin: 3vh 0;
+} */
+
+.container-content{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 75%;
+}
+.plot-height{
+  height: 60rem;
+}
+.pf-content{
+  border: 2px #d16a0a solid;
+  padding: 1.5rem 0;
+}
+.header_bg{
+    background: url(../img/banner_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 25rem;
+    position: relative;
+}
+.border_top{
+  border-top: 2px solid #d16a0a;
+}
+.new-font{
+  /* display: inline-block; */
+  color: #ffffff;
+  width: 50%;
+  margin: 1rem 0 1rem 0;
+  background-color: #d16a0a;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+}
+.show-img{
+  background-image: linear-gradient(
+    to right bottom,
+    #9dff0096, #01bdf7ab)
+  ,url(../img/GCCRI.JPG);
+  height: 100vh;
+  background-size: cover;
+}
+.middle-text{
+  position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  width: 70%;
+}
+.pf-middle-text{
+  position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.pos_rel{
+  position: relative;
+}
+.show-case-big{
+  display: block;
+	font-size: 1.5rem;
+	font-weight: 600;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.copyright {
+  background-color: #1a252f;
+}
+.yes{
+  height: 30rem;
+}
+.h50{
+  height: 4rem;
+  margin: 1rem 0 1rem 0;
+}
+
+/* Animations */
+@keyframes moveInLeft{
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	50%{
+		transform: translateX(60px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveInBottom{
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	50%{
+
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveInRight{
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80%{
+		transform: translateX(-10px)
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+/* customize label */
+label {
+  font-size: 1rem;
+  font-family: 'B612 Mono', monospace;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
+  color: #d16a0a
+}
+/* customize textarea */
+textarea#geneNames::placeholder{  /* Firefox 19+ */
+  color: rgba(114, 114, 114, 0.521)
+}
+textarea#ssGSEAlist::placeholder{  /* Firefox 19+ */
+  color: rgba(114, 114, 114, 0.521)
+}
+
+.first-section-pic{
+  background: url(../img/Index_pie_chart.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 100%;
+}
+.second-section-pic{
+  background: url(../img/new_front_fig.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+}
+.third-section-pic{
+  background: url(../img/GCCRI_home.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 100%;
+}
+
+/* customized button */
+.button-d {
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #2194E0;
+  border: 2px solid #2194E0;
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+}
+/* #boxDown{
+  color: #2194E0;
+} */
+#homenounder { 
+  text-decoration: none; 
+}
+.btnc:link,
+.btnc:visited{
+  text-decoration: none;
+  padding: 0 0.5vw;
+  display: inline-block;
+  border-radius: 0.5vw;
+  transition: all 0.1;
+}
+.btnc:hover{
+  /* transform: translateY(-0.7rem);
+  box-shadow: 0 0.6rem 1rem #6d6d6d; */
+  color: #ffffff;
+  background-color: #00a8ad
+}
+.btnc:active{
+  transform: translateY(0.2vh);
+}
+.btnc-white{
+  background-color: #d16a0a;
+  color: #ffffff;
+}
+.button-font{
+  font-size:1.5rem;
+  font-family: 'BioRhyme', serif;
+  font-style: oblique;
+  font-weight: 400;
+}
+.ana-title-font{
+  font-size:calc(0.5vw + 0.5vh);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul li{
+  padding: 0.8vh 0;
+}
+.pf-title-font{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+.content-title-font{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #000000;
+}
+.content-content-font{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.pf-title{
+  background: #d16a0a;
+  border-top-right-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+  padding-left: 1rem;
+  display: block;
+}
+
+/* ================================index css==================================================== */
+.banner {
+  background: url(../img/baby-beautiful-blur-322070.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  position: relative;
+  height: 25rem;
+}
+.head_box{
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.head_font{
+  color:orange;
+  font-family: Papyrus;
+  font-size: 3rem;
+}
+.description_box{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 22rem;
+  padding-top: 2.28rem;
+}
+
+.description_font{
+  color:white;
+  font-family: Montserrat;
+  font-size:1.5rem;
+}
+.inter {
+  padding: 1rem;
+  text-align:center;
+  font-size:1rem;
+  color:white;
+  background: #CA6F1E;
+}
+/* ======== */
+.intro_1 {
+  font-size:2rem;
+  color:grey;
+  font-family:Lora;
+}
+.h {
+  font-family:Lora;
+  color:lightslategrey;
+}
+.intro_2{
+  font-size:1.2rem;
+  color: #CA6F1E;
+}
+.section-box{
+  border-top: #dddddd solid;
+  padding: 4.8rem 0;
+}
+.tlp{
+  color: #d16a0a;
+  font-size: 1rem;
+  position: relative;
+}
+.tlp .tooltip_text{
+  visibility: hidden;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  width: 20rem;
+  background-color: #d16a0a;
+  color: #fff;
+  text-align: left;
+  border-radius: 0.2rem;
+  /* Position the tooltip */
+  position: absolute;
+  left: 10%;
+  z-index: 1;
+}
+.tlp:hover .tooltip_text{
+  visibility: visible;
+}
+

@@ -1,0 +1,177 @@
+.headline_p {
+    width: 180px;
+    padding: 20px;
+}
+/*headline word*/
+.headline_w {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 30px;
+}
+span {
+    color: orange;
+    font-family: Papyrus;
+}
+.frame {
+    font-size: 15px;
+    color:grey;
+    padding-top: 60px;
+}
+.white {
+    background: white;
+}
+/*cover pictures*/
+.pic1 {
+    background: url(../img/baby-beautiful-blur-322070.jpg);
+    /* background: #000000; */
+    /* padding-left: 5%; */
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: relative;
+    /* background-position: 50%;
+    line-height: 0.5; */
+    height: 40rem;
+}
+.head_box{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.head_font{
+    color:orange;
+    font-family: Papyrus;
+    font-size: 4rem;
+}
+.description_box{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 25rem;
+}
+.description_font{
+    color:white;
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+
+#par1 {
+    padding-left:10%;
+    line-height:1;
+    font-family:Montserrat;
+    color:white;
+    font-size: 30px;
+}
+
+.pic2 {
+    font-family: Nunito;
+    font-size: 5px;
+    text-align: center;
+}
+.pic3 {
+    text-align:center;
+    background:orange;
+    font-size:1vw;
+}#head3 {
+    font-family:Montserrat;
+    color:white;
+    font-size:2vw;
+}
+#par3 {
+    padding-left: 15%;
+    padding-right:15%;
+    font-family: Raleway;
+    color: white;
+    font-size: 1.5vw;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+.foot {
+    padding-top:3%;
+    padding-bottom:3%;
+    background:white;
+}
+.inter {
+    padding: 1%;
+    text-align:center;
+    font-size:1vw;
+    color:white;
+    background: #CA6F1E;
+}
+.board {
+    padding-top: 1%;
+    padding-bottom:3%;
+    text-align:center;
+}
+.par4 {
+    text-align:center;
+    color: #CA6F1E;
+    font-size:2.5vw;
+}
+.par5 {
+    padding-top:10%;
+    padding-bottom:10%;
+    font-size:1.5vw;
+}
+#menu {
+    font-size:1.2vw;
+    padding:5%;
+    line-height:2;
+    text-align:left;
+    padding-left:25%;
+}
+.anima {
+  color: black;
+  cursor: pointer;
+  transition-property: color, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+  transition-delay: 0s, 1s;
+}
+.anima:hover {
+  color: orange;
+  border-radius: 50%;
+}
+
+#head4 {
+    text-align:center;
+    color:#325c80;
+    padding-top:9%;
+    padding-bottom:9%;
+    font-size:1vw;
+}
+.container {
+    border-bottom:0.8px solid #dddddd;
+}
+.intro_1 {
+    font-size:43px;
+    color:grey;
+    padding-top:32%;
+    padding-bottom:1%;
+    font-family:Lora;
+    padding-right:4%;
+}
+.h {
+    font-family:Lora;
+    color:lightslategrey;
+}
+.intro_2{
+    padding-bottom:32%;
+    font-size:27px;
+    color: #CA6F1E;
+}
+.intro_p1 {
+    padding-top:15%;
+}
+.intro_p2 {
+    padding-left:0%;
+    padding-top:15%;
+}
+.back {
+    text-align: right;
+    color:blue
+}
+.section-box{
+    border-top: #dddddd solid;
+}
