@@ -9,7 +9,4 @@ conda install -c conda-forge r-ggpubr r-ggpmisc r-maxstat r-survminer r-plotly r
 
 install.packages('ComplexHeatmap')
 
-web server ip:10.248.115.166
-MySQL server ip:10.248.115.165
-
 sudo systemctl start mysqld
